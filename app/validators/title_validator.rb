@@ -5,5 +5,3 @@ class TitleValidator < ActiveModel::Validator
   end 
 
 end 
-
-# || "Secret" || "Top [number]" || "Guess")
