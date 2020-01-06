@@ -9,6 +9,6 @@ class Post < ActiveRecord::Base
 end
 
 
-class MyValidator < ActiveModel::Validator
+class Clickbait < ActiveModel::Validator
 
 "Won't Believe", "Secret", "Top [number]", or "Guess"
