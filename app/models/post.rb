@@ -9,5 +9,6 @@ class Post < ActiveRecord::Base
 end
 
 
+class MyValidator < ActiveModel::Validator
 
 "Won't Believe", "Secret", "Top [number]", or "Guess"
