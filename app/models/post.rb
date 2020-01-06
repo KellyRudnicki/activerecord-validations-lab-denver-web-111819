@@ -7,3 +7,5 @@ class Post < ActiveRecord::Base
     
   validates :title, on: 
 end
+
+"Won't Believe", "Secret", "Top [number]", or "Guess"
