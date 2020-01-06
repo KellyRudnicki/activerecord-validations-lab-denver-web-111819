@@ -1,7 +1,7 @@
 class TitleValidator < ActiveModel::Validator
   
   def validate(record)
-      unless !record.title.include? "Won't Believe"
+      unless !record.title.include? ("Won't Believe")
   end 
 
 end 
