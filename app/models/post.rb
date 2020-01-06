@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   include ActiveModel::Validations
+  
   validates_with TitleValidator
   
   validates :title, presence: true
