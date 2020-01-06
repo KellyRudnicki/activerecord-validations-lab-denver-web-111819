@@ -1,1 +1,1 @@
-class Title
+class TitleValidator
