@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
     
   validates Clickbait, on: :create 
   
-  def validate(record)
+  def clickbait(record)
     unless record.title != "Won't Believe" || "Secret" || "Top [number]" || "Guess"
   end 
   
