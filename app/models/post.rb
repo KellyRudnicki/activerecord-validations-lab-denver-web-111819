@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  include ActiveModel::Validator
+  include ActiveModel::Validations
   validates_with ClickbaitValidator
   
   validates :title, presence: true
