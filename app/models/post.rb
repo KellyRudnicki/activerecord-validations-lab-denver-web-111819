@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  include 
+  include ActiveModel::Validations
   validates :title, presence: true
   validates :summary, length: {maximum: 250} 
   validates :content, length: {minimum: 250}
