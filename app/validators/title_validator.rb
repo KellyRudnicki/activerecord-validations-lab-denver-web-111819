@@ -1,8 +1,8 @@
 class TitleValidator < ActiveModel::Validator
   
-  def validates_each(record)
-      unless !record.title.include? ("Won't Believe" || "Secret" || "Top #" || "Guess")
-      record.errors[:title] << 'Need a clickbaity title!'
+  def validates_each(record, attribute, value)
+      unless value =~ /(Won't Believe|Secret Top #" \d|Guess"/
+      record.errors[:attribute] << 'Need a clickbaity title!'
     end
   end 
 
