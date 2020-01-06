@@ -7,7 +7,7 @@ class ClickbaitValidator < ActiveModel::EachValidator
   
   def validate_with(record)
     unless record.title.include?("Won't Believe")
-      record.errors[attribute] << ("Need a clickbaity title!")
+      record.errors[:title] << ("Need a clickbaity title!")
     end 
     end
 end 
