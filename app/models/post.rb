@@ -9,6 +9,8 @@ class Post < ActiveRecord::Base
 end
 
 
-class Clickbait < ActiveModel::Validator
+# class Clickbait < ActiveModel::Validator
   def validate(record)
     unless record.title != "Won't Believe" || "Secret" || "Top [number]" || "Guess"
+  end 
+# end 
