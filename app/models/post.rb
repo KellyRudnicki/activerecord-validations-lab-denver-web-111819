@@ -5,7 +5,12 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: { in: %w(Fiction Non-Fiction),
     message: "%{value} is not a valid category" }
     
-  validates :title, on: :create 
+  validates Clickbait, on: :create 
+  
+  def validate(record)
+    unless record.title != "Won't Believe" || "Secret" || "Top [number]" || "Guess"
+  end 
+  
 end
 
 
