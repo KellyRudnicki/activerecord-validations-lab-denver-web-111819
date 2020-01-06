@@ -10,5 +10,6 @@ end
 
 
 class Clickbait < ActiveModel::Validator
+  def validate(record)
 
 "Won't Believe", "Secret", "Top [number]", or "Guess"
