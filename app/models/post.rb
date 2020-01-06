@@ -1,7 +1,4 @@
 class Post < ActiveRecord::Base
-  include ActiveModel::Validations
-  validates_with ClickbaitValidator
-  
   validates :title, presence: true
   validates :summary, length: {maximum: 250} 
   validates :content, length: {minimum: 250}
