@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  include 
+  include ActiveModel::Validator
   
   validates :title, presence: true
   validates :summary, length: {maximum: 250} 
