@@ -11,6 +11,4 @@ end
 
 class Clickbait < ActiveModel::Validator
   def validate(record)
-    unless record.title !=
-
-"Won't Believe", "Secret", "Top [number]", or "Guess"
+    unless record.title != "Won't Believe", "Secret", "Top [number]", or "Guess"
